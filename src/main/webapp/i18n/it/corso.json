@@ -1,0 +1,24 @@
+{
+    "universitaApp": {
+        "corso": {
+            "home": {
+                "title": "Corsi",
+                "createLabel": "Genera un nuovo Corso",
+                "createOrEditLabel": "Genera o modifica un Corso"
+            },
+            "created": "&Egrave; stato generato un nuovo Corso con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Corso identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Corso con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Corso {{ id }}?"
+            },
+            "detail": {
+                "title": "Corso"
+            },
+            "nome": "Nome",
+            "facolta": "Facolta",
+            "docente": "Docente",
+            "studenti": "Studenti"
+        }
+    }
+}

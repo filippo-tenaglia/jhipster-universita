@@ -1,0 +1,21 @@
+{
+    "universitaApp": {
+        "facolta": {
+            "home": {
+                "title": "Facoltas",
+                "createLabel": "Create a new Facolta",
+                "createOrEditLabel": "Create or edit a Facolta"
+            },
+            "created": "A new Facolta is created with identifier {{ param }}",
+            "updated": "A Facolta is updated with identifier {{ param }}",
+            "deleted": "A Facolta is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Facolta {{ id }}?"
+            },
+            "detail": {
+                "title": "Facolta"
+            },
+            "nome": "Nome"
+        }
+    }
+}

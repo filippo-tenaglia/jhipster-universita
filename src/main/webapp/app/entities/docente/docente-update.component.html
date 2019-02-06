@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-docente-heading" jhiTranslate="universitaApp.docente.home.createOrEditLabel">Create or edit a Docente</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!docente.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="docente.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="universitaApp.docente.nome" for="field_nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" id="field_nome"
+                        [(ngModel)]="docente.nome" required/>
+                    <div [hidden]="!(editForm.controls.nome?.dirty && editForm.controls.nome?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.nome?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="universitaApp.docente.cognome" for="field_cognome">Cognome</label>
+                    <input type="text" class="form-control" name="cognome" id="field_cognome"
+                        [(ngModel)]="docente.cognome" required/>
+                    <div [hidden]="!(editForm.controls.cognome?.dirty && editForm.controls.cognome?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.cognome?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="universitaApp.docente.facolta" for="field_facolta">Facolta</label>
+                    <select class="form-control" id="field_facolta" name="facolta" [(ngModel)]="docente.facoltaId"  required>
+                        <option *ngIf="!editForm.value.facolta" [ngValue]="null" selected></option>
+                        <option [ngValue]="facoltaOption.id" *ngFor="let facoltaOption of facoltas; trackBy: trackFacoltaById">{{facoltaOption.nome}}</option>
+                    </select>
+                </div>
+                <div [hidden]="!(editForm.controls.facolta?.dirty && editForm.controls.facolta?.invalid)">
+                    <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.facolta?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                    </small>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

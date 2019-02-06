@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "it.filten.universita",
+            "nativeLanguage": "it"
+        },
+        "jhipsterVersion": "5.8.1",
+        "applicationType": "monolith",
+        "baseName": "universita",
+        "packageName": "it.filten.universita",
+        "packageFolder": "it/filten/universita",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": true,
+        "messageBroker": false,
+        "serviceDiscoveryType": "eureka",
+        "buildTool": "maven",
+        "enableSwaggerCodegen": true,
+        "jwtSecretKey": "MTAzOTExNGQ0ZGMxOTc1MmJiMWJhMDcyZTcwYThjYWZjMzVmMjc3Zjg3OWNiMjhmODdjYmJjZmNjOWZkNjQzNmQxODkwZTViNGZlOTk2OGU5ZDFhMDhhMWE0MTYyN2NlZGYwZjhkNjFlZGE1NWU2Mjc5M2Y1MWM2OWVjZGM1NDA=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["cucumber"],
+        "jhiPrefix": "jhi",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "it",
+        "languages": ["it", "en"],
+        "entitySuffix": "",
+        "dtoSuffix": "DTO"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "universitaApp": {
+        "docente": {
+            "home": {
+                "title": "Docentes",
+                "createLabel": "Genera un nuovo Docente",
+                "createOrEditLabel": "Genera o modifica un Docente"
+            },
+            "created": "&Egrave; stato generato un nuovo Docente con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Docente identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Docente con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Docente {{ id }}?"
+            },
+            "detail": {
+                "title": "Docente"
+            },
+            "nome": "Nome",
+            "cognome": "Cognome",
+            "facolta": "Facolta"
+        }
+    }
+}

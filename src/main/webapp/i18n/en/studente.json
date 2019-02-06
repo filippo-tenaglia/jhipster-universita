@@ -1,0 +1,26 @@
+{
+    "universitaApp": {
+        "studente": {
+            "home": {
+                "title": "Studenti",
+                "createLabel": "Create a new Studente",
+                "createOrEditLabel": "Create or edit a Studente"
+            },
+            "created": "A new Studente is created with identifier {{ param }}",
+            "updated": "A Studente is updated with identifier {{ param }}",
+            "deleted": "A Studente is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Studente {{ id }}?"
+            },
+            "detail": {
+                "title": "Studente"
+            },
+            "data_nascita": "Data Nascita",
+            "nome": "Nome",
+            "cognome": "Cognome",
+            "matricola": "Matricola",
+            "facolta": "Facolta",
+            "corsi": "Corsi"
+        }
+    }
+}
