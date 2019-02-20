@@ -15,6 +15,7 @@ public interface CorsoMapper extends EntityMapper<CorsoDTO, Corso> {
     @Mapping(source = "facolta.nome", target = "facoltaNome")
     @Mapping(source = "docente.id", target = "docenteId")
     @Mapping(source = "docente.cognome", target = "docenteCognome")
+    @Mapping(source = "docente.nome", target = "docenteNome")
     CorsoDTO toDto(Corso corso);
 
     @Mapping(source = "facoltaId", target = "facolta")

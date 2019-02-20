@@ -10,6 +10,21 @@
     </h2>
     <jhi-alert></jhi-alert>
     <br/>
+        <form name="searchForm" role="form" (ngSubmit)="loadAll()">
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="universitaApp.facolta.nome" for="field_nome">Nome</label>
+                    <input type="text" name="nome" id="field_nome" 
+                    [(ngModel)]="valore" />
+                </div>
+                        <button type="submit"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+            <span  jhiTranslate="entity.action.search">
+            Search
+            </span>
+        </button>
+</form>
+<br/>
     <div class="table-responsive" *ngIf="facoltas">
         <table class="table table-striped">
             <thead>

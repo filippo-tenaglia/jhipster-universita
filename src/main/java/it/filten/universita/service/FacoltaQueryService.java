@@ -50,6 +50,7 @@ public class FacoltaQueryService extends QueryService<Facolta> {
     @Transactional(readOnly = true)
     public List<FacoltaDTO> findByCriteria(FacoltaCriteria criteria) {
         log.debug("find by criteria : {}", criteria);
+		System.out.println("NomeFilter: "+criteria.getNome().getContains());
         final Specification<Facolta> specification = createSpecification(criteria);
         return facoltaMapper.toDto(facoltaRepository.findAll(specification));
     }

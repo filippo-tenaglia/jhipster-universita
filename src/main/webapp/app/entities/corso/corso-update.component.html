@@ -38,7 +38,7 @@
                     <label class="form-control-label" jhiTranslate="universitaApp.corso.docente" for="field_docente">Docente</label>
                     <select class="form-control" id="field_docente" name="docente" [(ngModel)]="corso.docenteId"  required>
                         <option *ngIf="!editForm.value.docente" [ngValue]="null" selected></option>
-                        <option [ngValue]="docenteOption.id" *ngFor="let docenteOption of docentes; trackBy: trackDocenteById">{{docenteOption.cognome}}</option>
+                        <option [ngValue]="docenteOption.id" *ngFor="let docenteOption of docentes; trackBy: trackDocenteById">{{docenteOption.cognome+' '+docenteOption.nome}}</option>
                     </select>
                 </div>
                 <div [hidden]="!(editForm.controls.docente?.dirty && editForm.controls.docente?.invalid)">

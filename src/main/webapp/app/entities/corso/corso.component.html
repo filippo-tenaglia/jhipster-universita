@@ -32,7 +32,7 @@
                 </td>
                 <td>
                     <div *ngIf="corso.docenteId">
-                        <a [routerLink]="['../docente', corso.docenteId , 'view' ]" >{{corso.docenteCognome}}</a>
+                        <a [routerLink]="['../docente', corso.docenteId , 'view' ]" >{{corso.docenteCognome+' '+corso.docenteNome}}</a>
                     </div>
                 </td>
                 <td class="text-right">

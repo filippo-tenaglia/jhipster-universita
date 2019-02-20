@@ -22,6 +22,8 @@ public class CorsoDTO implements Serializable {
 
     private String docenteCognome;
 
+    private String docenteNome;
+
     public Long getId() {
         return id;
     }
@@ -68,6 +70,14 @@ public class CorsoDTO implements Serializable {
 
     public void setDocenteCognome(String docenteCognome) {
         this.docenteCognome = docenteCognome;
+    }
+
+    public String getDocenteNome() {
+        return docenteNome;
+    }
+
+    public void setDocenteNome(String docenteNome) {
+        this.docenteNome = docenteNome;
     }
 
     @Override

@@ -20,7 +20,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "corso")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Corso implements Serializable {
+public class Corso extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
     

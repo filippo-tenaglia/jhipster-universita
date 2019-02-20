@@ -2,18 +2,18 @@
     "universitaApp": {
         "facolta": {
             "home": {
-                "title": "Facoltas",
-                "createLabel": "Genera un nuovo Facolta",
-                "createOrEditLabel": "Genera o modifica un Facolta"
+                "title": "Facoltà",
+                "createLabel": "Genera una nuova Facoltà",
+                "createOrEditLabel": "Genera o modifica una Facoltà"
             },
-            "created": "&Egrave; stato generato un nuovo Facolta con identificatore {{ param }}",
-            "updated": "&Egrave; stato aggiornato Facolta identificato da {{ param }}",
-            "deleted": "&Egrave; stato eliminato Facolta con identificatore {{ param }}",
+            "created": "&Egrave; stata generata una nuova Facoltà con identificatore {{ param }}",
+            "updated": "&Egrave; stata aggiornata la Facoltà identificato da {{ param }}",
+            "deleted": "&Egrave; stata eliminata la Facoltà con identificatore {{ param }}",
             "delete": {
-                "question": "Sei sicuro di volere eliminare Facolta {{ id }}?"
+                "question": "Sei sicuro di volere eliminare la Facoltà {{ id }}?"
             },
             "detail": {
-                "title": "Facolta"
+                "title": "Facoltà"
             },
             "nome": "Nome"
         }

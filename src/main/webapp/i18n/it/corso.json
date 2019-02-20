@@ -7,16 +7,16 @@
                 "createOrEditLabel": "Genera o modifica un Corso"
             },
             "created": "&Egrave; stato generato un nuovo Corso con identificatore {{ param }}",
-            "updated": "&Egrave; stato aggiornato Corso identificato da {{ param }}",
-            "deleted": "&Egrave; stato eliminato Corso con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato il Corso identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato il Corso con identificatore {{ param }}",
             "delete": {
-                "question": "Sei sicuro di volere eliminare Corso {{ id }}?"
+                "question": "Sei sicuro di volere eliminare il Corso {{ id }}?"
             },
             "detail": {
                 "title": "Corso"
             },
             "nome": "Nome",
-            "facolta": "Facolta",
+            "facolta": "Facoltà",
             "docente": "Docente",
             "studenti": "Studenti"
         }
