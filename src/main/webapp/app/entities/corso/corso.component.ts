@@ -29,6 +29,7 @@ export class CorsoComponent implements OnInit, OnDestroy {
     predicate: any;
     previousPage: any;
     reverse: any;
+    valore: string;
 
     constructor(
         protected corsoService: CorsoService,
@@ -45,12 +46,14 @@ export class CorsoComponent implements OnInit, OnDestroy {
             this.previousPage = data.pagingParams.page;
             this.reverse = data.pagingParams.ascending;
             this.predicate = data.pagingParams.predicate;
+            this.valore = '';
         });
     }
 
     loadAll() {
         this.corsoService
             .query({
+                'nome.contains': this.valore,
                 page: this.page - 1,
                 size: this.itemsPerPage,
                 sort: this.sort()

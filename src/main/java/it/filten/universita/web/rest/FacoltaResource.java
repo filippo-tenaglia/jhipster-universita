@@ -92,7 +92,6 @@ public class FacoltaResource {
     @GetMapping("/facoltas")
     public ResponseEntity<List<FacoltaDTO>> getAllFacoltas(FacoltaCriteria criteria, Pageable pageable) {
         log.debug("REST request to get Facoltas by criteria: {}", criteria);
-		System.out.println("Filtro criteria rest:"+criteria.getNome().getContains());
         Page<FacoltaDTO> page = facoltaQueryService.findByCriteria(criteria, pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/facoltas");
         return ResponseEntity.ok().headers(headers).body(page.getContent());
